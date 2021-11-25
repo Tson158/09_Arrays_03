@@ -1,5 +1,5 @@
 /*********   CODE CHALLENGE HTML **********/
-
+        //Check in ---> Checkout system als praktische funktion z.b.
 
 //  Theorie ****************
     //  push()  /  pop()
