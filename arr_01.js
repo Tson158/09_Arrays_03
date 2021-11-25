@@ -1,5 +1,29 @@
 /*********   CODE CHALLENGE HTML **********/
 
+
+//  Theorie ****************
+    //  push()  /  pop()
+    //  push --> Daten rein ... (+)
+
+    // let arr = [];
+    // output(arr);
+    // arr.push("ich");
+    // output(arr);
+    // arr.push("bin");
+    // output(arr);
+    // arr.push("Thomas");
+    // output(arr);
+
+    // //  pop() --> Daten raus ... (-)
+    // output(arr.pop("bin"));
+    // output(arr);
+    // output(arr.pop());
+    // output(arr);
+    // output(arr.pop());
+    // output(arr);
+
+
+
 /*
 Aufgabe:
 Erstellen Sie eine JS-Struktur, die Ihnen den folgenden String 
@@ -40,8 +64,18 @@ function getHTML() {
 //  Modul: opentag | closetag
 function isOpenTag(tag) {
 
-    
-    return true;
+    const cond = (tag != stack[stack.length-1]);        // tag == tag oben auf dem Stapel?
+
+    if (cond) {
+        stack.push(tag);
+        // output(stack);
+        return true;
+    } else {
+        stack.pop();
+        // output(stack);
+        return false;
+
+    }
 }
 
 
